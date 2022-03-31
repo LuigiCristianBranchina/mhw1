@@ -1,0 +1,151 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+.titolo_pagina {
+
+    color: white;
+    font-family: Helvetica, sans-serif;
+    z-index: 1;
+    /*serve a sovrapporre il testo (più è grande il numero e più si troverà in alto) */
+}
+
+section, .div_img {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#foto_profilo {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    border: 5px solid lightskyblue;
+    background-image: url(me.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-image: url(overlay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 5px solid black;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pulsanti per il menu */
+nav a {
+    font-weight: bold;
+    background-color: lightskyblue;
+    color: black;
+    padding: 10px;
+    border-radius: 35px;
+    text-decoration: none;
+}
+
+/*testo all'interno dei bottoni*/
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+}
+
+/*per modificare il titolo*/
+.big_text_style {
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.image_container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 20px;
+}
+
+#realizzato {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
+
+/*per modificare il testo*/
+.text {
+    
+    font-family: Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: black;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 120px;
+
+}
+
+/*margine*/
+.sub_content_item {
+    margin: 0 30px;
+}
+
+.centramento {
+    width: 66.67%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .centramento {
+        width: 100%;  
+    }
+}
+
+
+
+
+
+
+
